@@ -10,16 +10,15 @@ block_image_height = 5;
 
 function load_img(){
 	fabric.Image.fromURL("golf-h.png", function(Img) {
-		hole_obj = Img;
-		hole_obj.scaleToWidth(50);
-		hole_obj.scaleToHeight(50);
-		hole_obj.set({
-			top:hole_y,
-			left:hole_x
+		golf_obj = Img;
+		golf_obj.scaleToWidth(50);
+		golf_obj.scaleToHeight(50);
+		golf_obj.set({
+		top:golf_y,
+		left:golf_x
 		});
-		canvas.add(hole_obj);
+		canvas.add(golf_obj);
 		});
-	new_image();
 }
 
 function new_image()
