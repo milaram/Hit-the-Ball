@@ -100,9 +100,9 @@ new_image();
 	{
 		if(ball_x >5)
 		{
-			ball_y = ball_y - block_image_height;
-console.log("block image height = " + " , Y = " + ball_y);
-console.log("When Down arrow key  is pressed, X = " + ball_x + " , Y  =  " +ball_y);
+			ball_x = ball_x - block_image_height;
+console.log("block image width = " + " , X = " + ball_x);
+console.log("When Left arrow key  is pressed, X = " + ball_y + " , X  =  " +ball_x);
 canvas.remove(ball_obj);
 new_image();		}
 	}
@@ -111,9 +111,9 @@ new_image();		}
 	{
 		if(ball_x <=1050)
 		{
-			ball_y = ball_y + block_image_height;
-console.log("block image height = " + " , Y = " + ball_y);
-console.log("When Down arrow key  is pressed, X = " + ball_x + " , Y  =  " +ball_y);
+			ball_x = ball_x + block_image_width;
+console.log("block image width = " + " , X = " + ball_x);
+console.log("When Right arrow key  is pressed, Y = " + ball_y + " , X  =  " +ball_x);
 canvas.remove(ball_obj);
 new_image();
 		}
